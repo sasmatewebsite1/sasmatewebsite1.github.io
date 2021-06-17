@@ -1,0 +1,131 @@
+<link rel = "stylesheet" type = "text/css" href = "/Users/pchakravarti/Desktop/Rimi Web Programming Lvl2/Website/style.css">
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>
+                MATE Robotics at SAS
+            </title>
+            <script src = "/Users/pchakravarti/Desktop/Rimi Web Programming Lvl2/Website/javascript.js">
+            </script>
+        </head>
+
+<body>
+    <ul>
+        <li> <a href = "#title">Home</a></li>
+        <li> <a href = "#division">MATE Divisions</a></li>
+        <li> <a href = "#bormform">Feedback Form</a></li>
+    </ul>
+    <div class = "container">
+        <div id = "title">
+            <h1>The SAS MATE Program</h1>
+        </div>
+        
+        <div id = "slideshow">
+            <!-- Images for slideshow -->
+            <div class = "mySlides fade">
+                <div class = "numbertext"> 1 / 5</div>
+                <img src = "Images/Pool Test 2.jpg" style = "width: 100%">
+                <div class = "text">A test drive at the pool.</div>
+            </div>
+            
+            <div class = "mySlides fade">
+                <div class = "numbertext"> 2 / 5</div>
+                <img src = "Images/Soldering.PNG" style = "width: 100%">
+                <div class = "text">A mechanical engineering officer teaches a team member to solder.</div>
+            </div>
+            
+            <div class = "mySlides fade">
+                <div class = "numbertext"> 3 / 5</div>
+                <img src = "Images/Pool Test 1.jpg" style = "width: 100%">
+                <div class = "text">Putting the bot in the water.</div>
+            </div>
+            
+            <div class = "mySlides fade">
+                <div class = "numbertext"> 4 / 5</div>
+                <img src = "Images/Drilling 2.jpg" style = "width: 100%">
+                <div class = "text">Modifying the bot.</div>
+            </div>
+
+            <div class = "mySlides fade">
+                <div class = "numbertext"> 5 / 5</div>
+                <img src = "Images/Drilling 1.jpg" style = "width: 100%">
+                <div class = "text">Using the drill press.</div>
+            </div>
+            
+            <!-- Arrows for slidehow-->
+            <a class = "prev" onclick = "plusSlides(-1)"> &#10094 </a>
+            <a class = "next" onclick = "plusSlides(1)"> &#10095 </a>
+        </div>
+        <br>
+         <!--Dots for slideshow-->
+         <div style = "text-align: center">
+            <span class = "dot" onclick = "currentSlide(1)"></span>
+            <span class = "dot" onclick = "currentSlide(2)"></span>
+            <span class = "dot" onclick = "currentSlide(3)"></span>
+            <span class = "dot" onclick = "currentSlide(4)"></span>
+            <span class = "dot" onclick = "currentSlide(5)"></span>
+        </div>
+        <br>
+        <div class = "paragraph"><h4>The Marine Advanced Technology Education (MATE) ROV Competition is an international underwater challenge that students around the world participate in. The competition focuses on four different challenges each year: SCOUT, NAVIGATOR, EXPLORER, and RANGER. Here at SAS's high school, the MATE team works all year to build their skills and enter bots into MATE's RANGER challenge. SAS's MATE team is split into three main divisions: MATE Blue, MATE Red, and MATE R&D.</h4></div>
+        <!--Divisions Menu-->
+        <div id = "division">
+            <div class= "divisionContainer">
+                <h1 class= "divisionTitle"> MATE Divisions </h1>
+                <!--"items" controls all four tabs and "red" or "blue" controls the info within each tab-->
+                <div class= "items">
+                    <a href= "javascript:void(0)" onclick= "openTab(event, 'blue');" id= "starterLink">
+                        <div class= "divisionTable tablink"> Blue </div>
+                    </a>
+                    <a href= "javascript:void(0)" onclick= "openTab(event, 'red');" >
+                        <div class= "divisionTable tablink"> Red </div>
+                    </a>
+                    <a href= "javascript:void(0)" onclick= "openTab(event, 'randd');" >
+                        <div class= "divisionTable tablink"> R&D </div>
+                    </a>
+                </div>
+                <div id= "blue" class="itemHeadings menuLabel">
+                    <h1><b>What is MATE Blue?</b></h1>
+                    <p> MATE Blue is for students who wish to learn more about MATE and build their skills in a casual environment.</p>
+                    <hr>
+                    <h1><b>What do you do in MATE Blue?</b></h1>
+                    <p>  In the first semester, MATE Blue members attend training sessions to build their skills. In the second semester, they are put into teams that will each work to produce a simple MATE bot to show their progress.</p>
+                    <hr>
+                    <h1><b>What's the time commitment like?</b></h1>
+                    <p> The time commitment is relatively low, with MATE Blue members only expected to come in once or twice a week.</p>
+                    <hr>
+                </div>
+                <div id= "red" class="itemHeadings menuLabel">
+                    <h1><b>What is MATE Red?</b></h1>
+                    <p> MATE Red is for more committed students who want to participate in the MATE ROV Competition.</p>
+                    <hr>
+                    <h1><b>What do you do in MATE Red?</b></h1>
+                    <p> In the first semester, MATE Red members are expected to attend intensive training sessions to build their skills. In the second semester, they are put into teams that will each produce a bot to enter the MATE RANGER Competition.</p>
+                    <hr>
+                    <h1><b>What's the time commitment like?</b></h1>
+                    <p> The time commitment is higher than MATE Blue, with MATE Red members expected to come in two to three times a week for longer hours, and possibly even more during the second semester.</p>
+                    <hr>
+                </div>
+                <div id= "randd" class="itemHeadings menuLabel">
+                    <h1><b>What is MATE R&D?</b></h1>
+                    <p> MATE Research and Development, or just R&D for short, is an officers-only team whose goal is to better guide MATE Red teams by working on projects outside of the normal goings-on to build a clearer idea of how to succeed in MATE challenges.</p>
+                    <hr>
+                    <h1><b>Why have an R&D Team?</b></h1>
+                    <p> The end goal for this team is that, over time, SAS's MATE teams overall can slowly improve in skill rather than starting fresh each year. SAS's VEX program also has an R&D team for the same reason.</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id = "bormform">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI8StIVjUAnb-gq6ep8eFrVTF6j-OKEt_iKBKaVhF8l5uh7A/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <br>
+        <br>
+    </div>
+    <script>
+        showSlides(slideIndex);
+        document.getElementById("starterLink").click();
+    </script>
+</body>
+</html>
