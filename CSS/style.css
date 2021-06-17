@@ -1,0 +1,215 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(90, 137, 184);
+    z-index: -2;
+}
+
+#title {
+    color: rgb(27, 40, 46);
+    text-align: center;
+    letter-spacing: 1;
+    padding-top: 30px;
+    margin: 30px;
+    font-size: 30px;
+    font-family:Arial;
+    line-height: 1.5;
+}
+
+.paragraph {
+    color:rgb(58, 82, 82);
+    background-color: skyblue;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 1.15;
+}
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 6;
+    padding: 2;
+    background-color: skyblue;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 1;
+}
+
+    /*Hyperlink Style*/
+    ul a {
+        display: block;
+        color: rgb(58, 82, 82);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:Arial;
+        font-size: 20px;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a:hover {
+        background-color: rgb(247, 239, 223)
+    }
+
+/*Slideshow Style*/
+#slideshow {
+    height: 600px;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*To hide the images by default*/
+.mySlides {
+    display: block;
+}
+
+/*Arrow Buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(233, 193, 108);
+    background-color: rgb(27, 40, 46);
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba (0, 0, 0, 0.8);
+}
+
+/*Caption text on images*/
+.text {
+    color:rgb(233, 193, 108);
+    background-color:rgb(27, 40, 46);
+    font-size: 20px;
+    font-family: Arial;
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Number text on images*/
+.numbertext {
+    color:rgb(233, 193, 108);
+    background-color:rgb(27, 40, 46);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+/* Circles/dots*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: rgb(247, 239, 223);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+
+/*Background color for dots on hover*/
+.do:hover, .active {
+    background-color: rgb(233, 193, 108);
+} 
+
+/*Fading animation*/
+@-webkit-keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity:1;}
+}
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*Menu Tabs*/
+#division {
+    background-color: rgb(27, 40, 46);
+}
+
+.divisionContainer {
+    padding: 10px 16px;
+    color: rgb(233, 193, 108);
+    padding-top: 72px;
+    font-family:Arial;
+    padding-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.divisionTitle {
+    text-align: center;
+    font-size: 48px;
+    width: auto;
+    padding-bottom: 24px;
+}
+
+.items {
+    text-align: center;
+    font-size: 36px;
+    border: 1px solid;
+    border-color: rgb(247, 239, 223);
+}
+
+.items::before, .items::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.divisionTable {
+    float: left;
+    width: 33.33333333333333333%;
+    padding: 12px 0;
+    color: rgb(247, 239, 223);
+}
+
+.divisionTable:hover {
+    background-color: rgb(233, 193, 108);
+}
+
+.selected {
+    background-color: skyblue;
+}
+
+.itemHeadings {
+    display: block;
+    padding: 32px 16px;
+    color: rgb(27, 40, 46);
+    background-color: rgb(247, 239, 223);
+}
