@@ -215,7 +215,7 @@ ul {
 }
 
 .form {
-    position: center;
-    margin: 32px;
-    padding: 32px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 64px;
 }
