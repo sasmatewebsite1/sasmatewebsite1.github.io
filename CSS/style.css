@@ -217,7 +217,7 @@ ul {
 .form {
     position: center;
     margin: 64px;
-    padding-bottom: 64px;
+    padding: 64px;
     max-width: 1000px;
     max-height: 1000px
 }
