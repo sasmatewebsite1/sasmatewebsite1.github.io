@@ -213,3 +213,9 @@ ul {
     color: rgb(27, 40, 46);
     background-color: rgb(247, 239, 223);
 }
+
+.form {
+    position: relative;
+    margin: 64px;
+    padding: 64px;
+}
