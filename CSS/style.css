@@ -225,9 +225,7 @@ ul {
 
 .center {
   display: block;
-  /*margin-left: auto;
-  margin-right: auto;*/
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
-    margin: 64px;
-    padding: 32px;
 }
